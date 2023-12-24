@@ -1,0 +1,167 @@
+/* HIGH LEVEL */
+.contents-container {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;  
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  padding-left: 3rem;
+  overflow-x: hidden;
+  padding:0;
+  color: #F5DEB3;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+  font-size:
+}
+main{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.width80pc-margin10pc {
+  width: 80%;
+  margin: 10%;
+}
+
+.header-tagline {
+  font-style: italic;
+  color:#98896c
+}
+h1 {
+  line-height: 0.3;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: rgb(104, 100, 100);
+  color: #F5DEB3;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  transition: 1s
+}
+button:hover {
+  border-color: #ffffff;
+  background-color: #404040;
+  transition: 1s
+}
+
+
+
+
+header, .form-input, .list-container {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 3rem;
+  /* background-color: black; */
+}
+
+.list-container {
+  BORDER: 1PX solid blue;
+
+
+}
+
+/* All columns */
+.name, .description, .favourite, .delete {border-inline: 1px solid}
+
+.form-input, .table-headings, .list-row {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 1fr;
+}
+
+/* Name/description */
+.name{
+
+}
+
+/* Information */
+.description{
+}
+
+
+/* Favourite */
+.favourite {
+
+}
+
+/* Delete */
+.delete {
+  transition: 1s;
+  background-color: rgb(88, 30, 30);
+
+}
+
+.delete:hover {
+  transition: 1s;
+  background-color: rgb(176, 75, 75);
+}
+
+
+/* submit */
+.submit {
+  background-color: rgb(31, 78, 31);
+  transition: 1s;
+}
+
+.submit:hover {
+  background-color: rgb(121, 164, 56);
+  transition: 1s;
+}
+
+/* favourite banner */
+.favourite-banner {
+  text-align: left;
+  background-color: rgb(20, 20, 114);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+/* table headings */
+
+.table-headings{
+  background-color: rgb(87, 87, 59);
+  border-radius: 2rem;
+}
+
+/* list */
+.your-resource-table {
+}
+
+/* settings */
+
+.settings-container {
+display: flex;
+flex-direction: row;
+/* text-align: right; */
+justify-content: space-between;
+
+}
+.settings-block {
+  display: flex;
+  flex-direction: row;
+  /* text-align: right; */
+  justify-content: space-between;
+  align-content: center;
+  font-size: 12px
+  cursor: pointer;
+  }
+.settings-cog {
+  width: 20px;
+  padding: 0.75rem;
+}
+.setting-toggle-label:hover {
+  cursor: pointer;
+  color: white;
+}
