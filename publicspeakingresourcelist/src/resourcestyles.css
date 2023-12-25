@@ -1,0 +1,105 @@
+  /* ----------------------------------------------- */
+.list-row, .table-headings{
+    display:grid;
+    grid-template-columns: 3fr 4fr 1fr 1fr;
+    }
+
+/* table headings */
+
+.table-headings{
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-radius: 2rem; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .table-headings-item {
+    border-left: 1px solid  rgba(255, 255, 255, 0.4);
+    margin: 0;
+    line-height: 4rem;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  /* ----------------------------------------------- */
+
+    
+/* All columns */
+.name, .information, .favourite, .delete {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-left: 1px solid  rgba(255, 255, 255, 0.4);
+    transition: 1s;
+    place-items: center;
+    text-align: center;
+}
+
+/* All columns */
+.name:hover, .information:hover, .favourite:hover, .delete:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 1px solid  rgba(255, 255, 255, 1);
+    transition: 1s;
+    
+
+}
+.name-item, .information-item, .favourite-item, .delete-item {
+}
+
+.name-item {
+    color: #F5DEB3;
+    background-color:  rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.favourite, .delete {
+    max-width: 50px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;;
+    }
+    
+
+/* Favourite */
+.favourite {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.favourite-item{
+  width: 100%;
+  font-size: 30px;
+  height: 1.4rem;
+}
+
+.favourite-item {
+  accent-color: #005050;
+}
+
+/* Delete */
+.delete {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  transition: 1s;
+  background-color: rgb(88, 30, 30);
+}
+
+.delete:hover {
+  transition: 1s;
+  background-color: rgb(176, 75, 75);
+}
+
+.delete-item {
+  width: 70%;
+  height: 2.5rem;
+  margin-left: 15%;
+}

@@ -1,79 +1,52 @@
-export const initialValues = [
-    {
-      "id": "01754293-3468-40ff-ad49-ccc3cf641984",
-      "description": "The Power of Public Speaking",
-      "information": "Effective public speaking can boost your confidence and influence others.",
-      "favourite": true,
-      "link": "https://www.pancommunications.com/insights/3-reasons-why-public-speaking-is-important/"
-    },
-    {
-      "id": "ecc3dd12-b1a2-493c-a07a-65bb30d6cbb4",
-      "description": "Overcoming Stage Fright",
-      "information": "Tips and techniques to overcome fear and anxiety when speaking in public.",
-      "favourite": false,
-      "link": "https://www.schoolofrock.com/resources/music-industry/how-to-overcome-stage-fright"
-    },
-    {
-      "id": "ea7afb52-a1d3-46d3-a0f1-9bcdd2fc5851",
-      "description": "The Art of Persuasive Speaking",
-      "information": "Learn how to craft compelling arguments and persuade your audience.",
-      "favourite": true,
-      "link": "https://www.example.com/art-of-persuasive-speaking"
-    },
-    {
-      "id": "1ee22339-7e50-43cb-a6d4-d011f9653107",
-      "description": "Mastering Non-Verbal Communication",
-      "information": "Understand the importance of body language and gestures in public speaking.",
-      "favourite": true,
-      "link": "https://www.example.com/mastering-non-verbal-communication"
-    },
-    {
-      "id": "a922bc1b-e89f-4b9f-bfca-98401b334cdd",
-      "description": "The Impact of Storytelling in Public Speaking",
-      "information": "Discover how storytelling can captivate and engage your audience.",
-      "favourite": false,
-      "link": "https://www.example.com/impact-of-storytelling"
-    },
-    {
-      "id": "e4bec9e1-8720-414b-8211-28fb2cceb258",
-      "description": "The Benefits of Effective Public Speaking",
-      "information": "Learn how public speaking skills can benefit your career and personal growth.",
-      "favourite": false,
-      "link": "https://www.example.com/benefits-of-public-speaking"
-    },
-    {
-      "id": "7d8a8a65-2a5e-4b6f-9eaa-3e7e1833878a",
-      "description": "The Art of Storytelling in Marketing",
-      "information": "Explore how storytelling can be used as a powerful marketing technique.",
-      "favourite": true,
-      "link": "https://www.example.com/art-of-storytelling-in-marketing"
-    },
-    {
-      "id": "9b5e9874-3f3f-4e2b-8b64-9e8b3f0f0c9f",
-      "description": "Public Speaking for Introverts",
-      "information": "Tips and strategies for introverts to excel in public speaking and presentations.",
-      "favourite": false,
-      "link": "https://www.example.com/public-speaking-for-introverts"
-    },
-    {
-      "id": "f1b8d4a7-0e67-4e56-9abf-9e5c0d0b0a5e",
-      "description": "Effective Body Language in Presentations",
-      "information": "Learn how to use body language effectively to enhance your presentations.",
-      "favourite": true,
-      "link": "https://www.example.com/effective-body-language-in-presentations"
-    },
-    {
-      "id": "c9d2a6db-0a7a-4d74-9df8-5c2f7e2437f5",
-      "description": "Public Speaking in the Digital Age",
-      "information": "Adapt your public speaking skills to virtual presentations and online platforms.",
-      "favourite": false,
-      "link": "https://www.example.com/public-speaking-in-the-digital-age"
-    },
-    {
-      "id": "b5a0b97f-4c6c-49a9-bf0f-2b92dce8e7db",
-      "description": "Thinking in React",
-      "information": "...",
-      "favourite": true,
-      "link": "hhttps://react.dev/learn/thinking-in-react"
-    }
-  ];
+export const initialValues = 
+[
+  {
+      "id": "ad36cbe1-940e-4a50-8617-411c2e99ff61",
+      "description": "While James made this project.",
+      "information": "Even in small projects like this, separating out components into sub-components can help with code clarity.",
+      "link": "",
+      "favourite": false
+  },
+  {
+      "id": "7cc50960-054d-4b00-99c6-e2071a8b4f0d",
+      "description": "David Weinberger's talks about his book \"Small Pieces Loosely Joined\".",
+      "information": "Systems built with small, loosely joined components are often more scalable and maintainable. Adding new functionality, scaling the system, maintenance and troubleshooting all become easier and less disruptive.",
+      "link": "https://www.youtube.com/watch?v=gLNRJb0rSYE&ab_channel=LivingInnovation-EUProjectH2020",
+      "favourite": true
+  },
+  {
+      "id": "f0226075-e3b8-4ba0-b6bf-8db14f7364d6",
+      "description": "Building an app for a homeless shelter in four weeks.",
+      "information": "User research and feedback play a crucial role in guiding development priorities. ",
+      "link": "https://shelterapp-homehorizon.onrender.com/",
+      "favourite": false
+  },
+  {
+      "id": "b33d20b8-9d6b-482a-991b-6f86c10770bf",
+      "description": "CSS best-practice class names tutorial.",
+      "information": "Take the time to plan your naming conventions and document them for your team. Ensure the classes are named clearly and descriptively, and well-organised in the file structure. This ensures consistency and helps onboard new team members quickly. \n",
+      "link": "https://www.youtube.com/watch?v=fYq5PXgSsbE&ab_channel=WebDevSimplified",
+      "favourite": false
+  },
+  {
+      "id": "994d9663-c0cd-422d-8de0-32509d410fbb",
+      "description": "Martin Fowler's book on refactoring.",
+      "information": "Once your code is functional, refactoring is the process of improving the design of existing code without changing its behavior. Learning about refactoring techniques can help you write cleaner, more maintainable code and improve the overall quality of your software.",
+      "link": "https://martinfowler.com/books/refactoring.html",
+      "favourite": true
+  },
+  {
+      "id": "949da8dc-4650-4447-97d2-edc765848578",
+      "description": "The Agile Manifesto (outlines the core principles and values of Agile software development).",
+      "information": "Some highlights to me are: (1) promoting effective collaboration among team members, (2) focusing on delivering working software that meets customer needs, (3) involving customers throughout the development process to ensure satisfaction, and (4) continuously adapting and learning from feedback.",
+      "link": "https://agilemanifesto.org/",
+      "favourite": true
+  },
+  {
+      "id": "22f26fc9-cc12-4cef-bbba-ea0b7530d894",
+      "description": "Judy Brewer work on the Web Accessibility Initiative.",
+      "information": "Accessibility is a fundamental aspect of inclusive design. It is not just aobut compliance with guidelines, but about ensuring that everyone can most easily access and engage with technology. Best practices include meaningful descriptive text alternatives, clear use of semantic html for screen readers, and easy keyboard-only navigation for desktop sites.",
+      "link": "https://www.youtube.com/watch?v=Wb2X9kYEvXc&ab_channel=TEDxTalks",
+      "favourite": true
+  }
+]

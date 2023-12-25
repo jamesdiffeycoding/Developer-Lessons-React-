@@ -12,8 +12,18 @@
   text-align: left;
   justify-content: center;
   align-content: center;
-  font-size:
+  min-width: 600px;
 }
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+}
+
 main{
   height: 100vh;
   width: 100vw;
@@ -22,15 +32,26 @@ main{
 
 .width80pc-margin10pc {
   width: 80%;
-  margin: 10%;
-}
+  min-width: 700px;
 
-.header-tagline {
-  font-style: italic;
-  color:#98896c
+  margin: 5%;
+  padding: 5%;
+  border: 1px solid transparent;
+  transition: 1s;
+  
+}
+.width80pc-margin10pc:hover {
+  
+  border: 1px solid white;
+  transition: 1s;
+
+  border-radius: 20px;
+  
 }
 h1 {
-  line-height: 0.3;
+  line-height: 0.9;
+  padding: 0;
+  margin-top: 0;
 }
 button {
   border-radius: 8px;
@@ -49,12 +70,12 @@ button:hover {
   transition: 1s
 }
 
-
-
-
-header, .form-input, .list-container {
-  overflow: hidden;
+/* Header */
+.header-tagline {
+  font-style: italic;
+  color:#98896c
 }
+
 
 .header {
   position: fixed;
@@ -66,78 +87,41 @@ header, .form-input, .list-container {
   /* background-color: black; */
 }
 
-.list-container {
-  BORDER: 1PX solid blue;
-
-
+/* Form */
+textarea {
+  resize: vertical;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* All columns */
-.name, .description, .favourite, .delete {border-inline: 1px solid}
-
-.form-input, .table-headings, .list-row {
-  display: grid;
-  grid-template-columns: 2fr 4fr 2fr 1fr;
+.resizable-textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 50vw;
+  min-width: 30%;
+  margin-left: 5rem;
 }
 
-/* Name/description */
-.name{
-
+header, .form-input, .list-container {
+  overflow: hidden;
 }
 
-/* Information */
-.description{
+.form-input-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-
-/* Favourite */
-.favourite {
-
-}
-
-/* Delete */
-.delete {
+.form-input-pair:hover {
+  color: white;
   transition: 1s;
-  background-color: rgb(88, 30, 30);
 
 }
 
-.delete:hover {
-  transition: 1s;
-  background-color: rgb(176, 75, 75);
-}
-
-
-/* submit */
-.submit {
-  background-color: rgb(31, 78, 31);
-  transition: 1s;
-}
-
-.submit:hover {
-  background-color: rgb(121, 164, 56);
-  transition: 1s;
-}
-
-/* favourite banner */
-.favourite-banner {
-  text-align: left;
-  background-color: rgb(20, 20, 114);
-  width: fit-content;
-  padding: 1rem;
-  border-radius: 2rem;
-}
-
-/* table headings */
-
-.table-headings{
-  background-color: rgb(87, 87, 59);
-  border-radius: 2rem;
-}
-
-/* list */
-.your-resource-table {
-}
 
 /* settings */
 
@@ -147,6 +131,7 @@ flex-direction: row;
 /* text-align: right; */
 justify-content: space-between;
 
+
 }
 .settings-block {
   display: flex;
@@ -154,14 +139,47 @@ justify-content: space-between;
   /* text-align: right; */
   justify-content: space-between;
   align-content: center;
-  font-size: 12px
+  font-size: 12px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.2);
+  transition: 1s;
+
   }
+
+.settings-block:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  transition: 1s;
+}
+
+.settings-inputs {
+  accent-color: #005050;
+}
 .settings-cog {
   width: 20px;
   padding: 0.75rem;
+  
 }
 .setting-toggle-label:hover {
   cursor: pointer;
   color: white;
+  transition: 1s;
+}
+
+
+
+  /* ----------------------------------------------- */
+
+/* submit */
+.submit {
+  background-color: rgb(0, 0, 0.5);
+  transition: 1s;
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  height: 2rem;
+}
+
+.submit:hover {
+  background-color: rgb(0, 0, 0.3);
+  transition: 1s;
 }

@@ -64,22 +64,30 @@ function App() {
       }}>
         <div className="width80pc-margin10pc">
           <NewResourceForm addResource={addResource} />
-          {/* <ProjectExplanation/> */}
         </div>
       </section>
       <section className="contents-container" style={{ 
         backgroundColor: darkMode ?'#353535' : '#007070'
       }}>
         <div className="width80pc-margin10pc">
-          {/* <ResourceList list={list} changeFavourite={changeFavourite} deleteItemById={deleteItemById} filterState={filterState}/> */}
+          <ResourceList list={list} changeFavourite={changeFavourite} deleteItemById={deleteItemById} filterState={filterState}/>
+          </div>
+      </section>
+
+
+      <section className="contents-container" style={{ 
+        backgroundColor: darkMode ?'#101010' : '#003030'
+      }}>
+        <div className="width80pc-margin10pc">
           {/* <ProjectExplanation/> */}
         </div>
       </section>
+
       <section className="contents-container" style={{ 
         backgroundColor: darkMode ?'#252525' : '#005050'
       }}>
         <div className="width80pc-margin10pc">
-          {/* <ProjectExplanation/> */}
+          <ProjectExplanation/>
         </div>
       </section>
     </main>

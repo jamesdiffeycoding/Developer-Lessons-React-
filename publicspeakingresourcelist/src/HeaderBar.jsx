@@ -10,7 +10,7 @@ export default function HeaderBar ({toggleFilter, toggleColourTheme}) {
     return (<>
 
     <div className="settings-container">
-    <h1>Resources for Developers</h1>
+    <h1>Lessons and learnings I want to remember...</h1>
     <button className="settings-block" onClick={(toggleSettingsDisplay)}><img src="../settings.png" className="settings-cog" alt="settings-icon"></img>
     <div style={{display: displaySettings ? 'inline' : 'none'}}>
         <FilterToggle toggleFilter={toggleFilter}/>
@@ -18,7 +18,7 @@ export default function HeaderBar ({toggleFilter, toggleColourTheme}) {
     </div>
     </button>
     </div>
-    <p className="tagline">A place to store the lessons you want to remember...</p>
+    <p className="header-tagline">A place to record important things.</p>
     </>
     )
     
