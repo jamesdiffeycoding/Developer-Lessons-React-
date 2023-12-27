@@ -1,5 +1,4 @@
 import React from "react"
-import Resource from "./Resource";
 export default function NewResourceForm({ addResource }){
 
     const [item, setItem]= React.useState("")

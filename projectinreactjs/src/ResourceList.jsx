@@ -1,8 +1,6 @@
 import React from "react";
-import Resource from "./Resource";
-import ResourceListFiltered from "./ResourceListFiltered";
-import ResourceListUnfiltered from "./ResourceListUnfiltered";
-import { initialValues } from './initialValues'
+import ResourceListFiltered from "./ResourceListFiltered.jsx";
+import ResourceListUnfiltered from "./ResourceListUnfiltered.jsx";
 
 import './resourcestyles.css'
 

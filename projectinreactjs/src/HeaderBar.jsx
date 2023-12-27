@@ -1,6 +1,6 @@
 import React from "react";
-import FilterToggle from "./FilterToggle";
-import ColourThemeToggle from "./ColourThemeToggle";
+import FilterToggle from "./FilterToggle.jsx";
+import ColourThemeToggle from "./ColourThemeToggle.jsx";
 
 export default function HeaderBar ({toggleFilter, toggleColourTheme}) {
 
