@@ -1,12 +1,12 @@
 // IMPORT - COMPONENTS
-import ProjectExplanation from './ProjectExplanation'
-import HeaderBar from './HeaderBar'
-import NewResourceForm from './NewResourceForm'
-import ResourceList from './ResourceList'
+import ProjectExplanation from './ProjectExplanation.jsx'
+import HeaderBar from './HeaderBar.jsx'
+import NewResourceForm from './NewResourceForm.jsx'
+import ResourceList from './ResourceList.jsx'
 
 // IMPORTS - OTHER
 import './styles.css'
-import { initialValues } from './initialValues'
+import { initialValues } from './initialValues.js'
 import {v4 as uuidv4} from 'uuid'
 import { useState, useEffect } from 'react'
 
