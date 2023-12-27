@@ -1,6 +1,6 @@
 import React from "react";
-import Resource from "./Resourcejsx";
-import TableHeadings from "./TableHeadings";
+import Resource from "./Resource.jsx";
+import TableHeadings from "./TableHeadings.jsx";
 export default function ResourceListFiltered ({list, changeFavourite, deleteItemById}) {
     return (<>
 
