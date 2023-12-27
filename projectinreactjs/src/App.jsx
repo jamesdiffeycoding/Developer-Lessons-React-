@@ -13,23 +13,33 @@ import { useState, useEffect } from 'react'
 // COMPONENT DECLARATION
 function App() {
 // CORE FUNCTIONALITY (view, add, delete)
-  const [list, setList] = useState(initialValues)
-  const storedList = localStorage.getItem("resourceList"); 
-  const [initialLoad, setInitialLoad] = useState(true)
-  if (initialLoad) {setList(JSON.parse(storedList)); setInitialLoad(false) } // function that runs on startup only
+  // On first render, initiate local storage with initial values
+  useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(initialValues))}, []);
 
-  useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(list)) }, [list]) // ensure local storage doesn't end up 'one step behind'
 
+  // let stored Values = local storage data
+  let storedValues = JSON.parse(localStorage.getItem("resourceList"));
+
+  // create State for updating the list
+  const [updatedList, setUpdatedList] = useState(storedValues);
+  useEffect(()=>{
+    if(storedValues) {setUpdatedList(storedValues)} else {setUpdatedList([])}}, []);
+  
+  // update the stored Values whenever the updatedList changes
+  useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(updatedList)); console.log(`stored values`); console.log(storedValues)}, [updatedList]) 
+
+  // add function that updates the list
   function addResource(item, info, link) {
-    setList(list => [...list, {id: uuidv4(), description: item, information: info, link: link, favourite: false}]) }
+    setUpdatedList(updatedList => [...updatedList, {id: uuidv4(), description: item, information: info, link: link, favourite: false}]);
+   }
 
   function changeFavourite(id, favouriteStatus) {
-    setList(list => list.map(resource => resource.id === id ?
+    setUpdatedList(updatedList => updatedList.map(resource => resource.id === id ?
       { ...resource, favourite: !favouriteStatus } : resource ));
-    localStorage.setItem("resourceList", JSON.stringify(list)); }
+    localStorage.setItem("resourceList", JSON.stringify(updatedList)); }
 
   function deleteItemById(id) {
-    setList(list => list.filter(resource => resource.id !== id)) }
+    setUpdatedList(updatedList => updatedList.filter(resource => resource.id !== id)) }
 
 // FILTER TOGGLE
   const [filterState, setFilterState] = useState(true)
@@ -70,7 +80,7 @@ function App() {
         backgroundColor: darkMode ?'#353535' : '#007070'
       }}>
         <div className="width80pc-margin10pc">
-          <ResourceList list={list} changeFavourite={changeFavourite} deleteItemById={deleteItemById} filterState={filterState}/>
+          <ResourceList list={updatedList} changeFavourite={changeFavourite} deleteItemById={deleteItemById} filterState={filterState}/>
           </div>
       </section>
 
@@ -79,7 +89,6 @@ function App() {
         backgroundColor: darkMode ?'#101010' : '#003030'
       }}>
         <div className="width80pc-margin10pc">
-          {/* <ProjectExplanation/> */}
         </div>
       </section>
 

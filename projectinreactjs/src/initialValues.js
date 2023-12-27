@@ -1,6 +1,4 @@
-export const initialValues = 
-[
-  {
+export const initialValues = [  {
       "id": "ad36cbe1-940e-4a50-8617-411c2e99ff61",
       "description": "While James made this project.",
       "information": "Even in small projects like this, separating out components into sub-components can help with code clarity.",

@@ -2,11 +2,11 @@ import React from "react";
 import Resource from "./Resource";
 import ResourceListFiltered from "./ResourceListFiltered";
 import ResourceListUnfiltered from "./ResourceListUnfiltered";
+import { initialValues } from './initialValues'
+
 import './resourcestyles.css'
 
 export default function ResourceList ({list, changeFavourite, deleteItemById, filterState}) {
-console.log(list)
-    
 
 return (
     <div>
