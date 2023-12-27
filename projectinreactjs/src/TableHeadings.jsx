@@ -10,6 +10,5 @@ export default function TableHeadings() {
     <h5 className="table-headings-item">Delete</h5>
 </div>
     </>
-        
     )
 }
