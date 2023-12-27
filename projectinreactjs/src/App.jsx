@@ -16,17 +16,17 @@ function App() {
   // On first render, initiate local storage with initial values
   useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(initialValues))}, []);
 
-
-  // let stored Values = local storage data
-  let storedValues = JSON.parse(localStorage.getItem("resourceList"));
-
   // create State for updating the list
-  const [updatedList, setUpdatedList] = useState(storedValues);
-  useEffect(()=>{
-    if(storedValues) {setUpdatedList(storedValues)} else {setUpdatedList([])}}, []);
-  
+  const [updatedList, setUpdatedList] = useState(() => {
+    const storedValues = JSON.parse(localStorage.getItem("resourceList"));
+    console.log(storedValues)
+    if(storedValues == null) {return initialValues}
+    return storedValues}
+  );
+
+
   // update the stored Values whenever the updatedList changes
-  useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(updatedList)); console.log(`stored values`); console.log(storedValues)}, [updatedList]) 
+  useEffect(()=>{ localStorage.setItem("resourceList", JSON.stringify(updatedList))}, [updatedList]) 
 
   // add function that updates the list
   function addResource(item, info, link) {
